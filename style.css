@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-image: url(./img/header-background-mobile.svg);
   background-repeat: no-repeat;
-  width: 100vh;
+  background-size: cover;
   background-color: #e5e5e5;
 }
 
@@ -14,7 +14,7 @@ body {
   z-index: -1;
 }
 
-.logo {
+h1 {
   width: 100px;
   height: 40px;
   margin: 0 12px;
@@ -34,7 +34,7 @@ header {
   padding-right: 24px;
 }
 
-h1 {
+h2 {
   margin: 114px 24px 12px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
