@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./img/header-background-mobile.svg);
+  background-repeat: no-repeat;
+  width: 100vh;
+  background-color: #e5e5e5;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  margin-top: 104px;
+  z-index: -1;
+}
+
+.logo {
+  width: 100px;
+  height: 40px;
+  margin: 0 12px;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  padding-left: 12px;
+  padding-right: 24px;
+}
+
+h1 {
+  margin: 114px 24px 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+}
+
+.description {
+  display: flex;
+  margin: 0 24px 12px;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+}
+
+.connect {
+  margin: 0 24px 12px;
+  padding: 0;
+  color: #7f8cff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.social {
+  max-width: 170px;
+  display: flex;
+  margin: 12px 24px;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
