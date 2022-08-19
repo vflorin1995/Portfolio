@@ -3,8 +3,7 @@ body {
   padding: 0;
   background-image: url(./img/header-background-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #e5e5e5;
+  background-color: white;
 }
 
 .background {
@@ -77,4 +76,153 @@ h2 {
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+.works {
+  display: grid;
+  grid-template-rows: 4fr;
+}
+
+.projects {
+  background-color: rgb(250, 250, 250);
+  margin: 44px 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  margin: 16px;
+  flex: 1;
+}
+
+.card-details {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a869a;
+  margin: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30%;
+}
+
+.card-details > :first-child {
+  color: #344563;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  flex: 1;
+  margin: 0 16px 16px;
+  color: #172b4d;
+}
+
+.card-description {
+  margin: 0 16px 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.card-list {
+  margin-left: 16px;
+}
+
+.card-tech {
+  display: inline;
+  padding: 4px 12px;
+  background-color: #ebebff;
+  margin: 12px 8px 12px 0;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+button {
+  margin: 12px 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  border: 1px solid hsla(234, 100%, 69%, 1);
+  width: 124px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+button:hover {
+  background-color: #6070ff;
+  color: white;
+  border: none;
+}
+
+button:active {
+  background-color: #2230d2;
+  color: white;
+  border: none;
+}
+
+button:disabled {
+  background-color: white;
+  color: #5e6c84;
+  border: hsla(216, 14%, 79%, 1);
+}
+
+.aboutme {
+  margin-bottom: 24px;
+}
+
+.getresume {
+  width: 160px;
+  margin: 0 24px;
+}
+
+.about-languages-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-languages {
+  flex: 1;
+  margin: 6px 0;
+  padding: 10px;
+  background-color: #f7f7f9;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.small-icon {
+  margin: 0 10px;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  margin: 36px;
+}
+
+.about-skill-list {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chevron {
+  margin: 0 30px;
 }
