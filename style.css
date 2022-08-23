@@ -230,6 +230,21 @@ button:disabled {
 .contact-form {
   display: flex;
   flex-direction: column;
+  position: relative;
+  background: #6070ff;
+  border-top-left-radius: 80px;
+  z-index: -2;
+}
+
+.contact-form .background-img {
+  background-image: url(./img/contact\ form\ shapes-mobile.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  left: 153px;
+  right: 0;
+  bottom: 0;
+  top: 30px;
+  z-index: -1;
 }
 
 .contact-me {
@@ -238,6 +253,7 @@ button:disabled {
   line-height: 52px;
   font-weight: 700;
   text-align: center;
+  color: #fff;
 }
 
 .support-msg {
@@ -247,6 +263,7 @@ button:disabled {
   font-weight: 400;
   text-align: center;
   margin: 12px 24px;
+  color: #fff;
 }
 
 .form {
@@ -257,19 +274,20 @@ input {
   display: block;
   padding: 16px;
   margin: 20px 24px;
-  width: 295px;
+  width: calc(100% - 80px);
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   line-height: 20px;
   font-weight: 400;
+  border: none;
 }
 
 .comment {
   display: block;
   padding: 16px;
   margin: 20px 24px;
-  width: 295px;
+  width: calc(100% - 80px);
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
@@ -281,4 +299,5 @@ input {
 .contact-btn {
   display: block;
   margin: 24px;
+  color: #6070ff;
 }
