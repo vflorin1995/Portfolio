@@ -226,3 +226,59 @@ button:disabled {
 .chevron {
   margin: 0 30px;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.support-msg {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin: 12px 24px;
+}
+
+.form {
+  margin-top: 36px;
+}
+
+input {
+  display: block;
+  padding: 16px;
+  margin: 20px 24px;
+  width: 295px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.comment {
+  display: block;
+  padding: 16px;
+  margin: 20px 24px;
+  width: 295px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 400;
+  height: 170px;
+}
+
+.contact-btn {
+  display: block;
+  margin: 24px;
+}
