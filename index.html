@@ -13,10 +13,17 @@
 <body>
     <img src="./img/header-shapes-mobile@2x.svg" class="background" alt="background">
     <header>
-        <h1> My Logo </h1>
-        <nav><img src="./img/hamburger.png" class="hamburger" alt="hamburger icon"></nav>
+        <a href="#"><h1> My Logo </h1></a>
+        <nav>
+            <img src="./img/hamburger.png" class="hamburger" alt="hamburger icon">
+            <ul class="menu">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
+    <section class="background-top">
         <h2>I'm Mariane <br> Glad to see you!</h2>
         <p class="description">I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
         <p class="connect">LET'S CONNECT</p>
@@ -30,10 +37,12 @@
     </section>
     <section class="works">
         <div class="projects">
-            <img src="./img/picture1.png" class="project-image" alt="picture1">
-            <div>
+            <img src="./img/picture1.png" class="project-image hide-pe-mare" alt="picture1">
+            <img src="./img/picture1d.png" class="hide-pe-mic project-image " alt="picture1">
+            <div class="img-description">
                 <ul class="card-details">
-                    <li>Canopy</li>
+                    <li class="hide-pe-mic-lista">CANOPY</li>
+                    <li class="hide-pe-mare-lista">Canopy</li>
                     <li>|</li>
                     <li>Back End Dev</li>
                     <li>|</li>
@@ -49,18 +58,21 @@
                 <button type="button">See project</button>
             </div>
         </div>
-        <div class="projects">
-            <img src="./img/picture2.png" class="project-image" alt="picture1">
-            <div>
+        <div class="projects right">
+            <img src="./img/picture2.png" class="project-image hide-pe-mare" alt="picture1">
+            <img src="./img/picture4.png" class="project-image hide-pe-mic" alt="picture1">
+            <div class="img-description unu">
                 <ul class="card-details">
-                    <li>Canopy</li>
+                    <li class="hide-pe-mic-lista">FACEBOOK</li>
+                    <li class="hide-pe-mare-lista">Canopy</li>
                     <li>|</li>
                     <li>Back End Dev</li>
                     <li>|</li>
                     <li>2015</li>
                 </ul>
                 <h3 class="card-title">Multi-Post Stories</h3>
-                <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required</p>
+                <p class="card-description hide-pe-mic-lista">Experimental content creation feature that allows users to add to an existing story over the course of the day without spamming theri friends</p>
+                <p class="card-description hide-pe-mare-lista">A daily selection of privately personalized reads; no accounts or sign-ups required</p>
                 <ul class="card-list">
                     <li class="card-tech">html</li>
                     <li class="card-tech">css</li>
@@ -70,17 +82,21 @@
             </div>
         </div>
         <div class="projects">
-            <img src="./img/picture3.png" class="project-image" alt="picture1">
-            <div>
+            <img src="./img/picture3.png" class="project-image hide-pe-mare" alt="picture1">
+            <img src="./img/picture1.png" class="project-image hide-pe-mic" alt="picture1">
+            <div class="img-description zero">
                 <ul class="card-details">
-                    <li>Canopy</li>
+                    <li class="hide-pe-mic-lista">FACEBOOK</li>
+                    <li class="hide-pe-mare-lista">Canopy</li>
                     <li>|</li>
                     <li>Back End Dev</li>
                     <li>|</li>
                     <li>2015</li>
                 </ul>
-                <h3 class="card-title">Tonic</h3>
-                <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required</p>
+                <h3 class="card-title hide-pe-mare-lista">Tonic</h3>
+                <h3 class="card-title hide-pe-mic-lista">Facebook 360</h3>
+                <p class="card-description hide-pe-mic-lista">Exploring the future of media in Facebook first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR</p>
+                <p class="card-description hide-pe-mare-lista">A daily selection of privately personalized reads; no accounts or sign-ups required</p>
                 <ul class="card-list">
                     <li class="card-tech">html</li>
                     <li class="card-tech">css</li>
@@ -89,18 +105,22 @@
                 <button type="button">See project</button>
             </div>
         </div>
-        <div class="projects">
-            <img src="./img/picture4.png" class="project-image" alt="picture1">
-            <div>
+        <div class="projects right">
+            <img src="./img/picture4.png" class="project-image hide-pe-mare" alt="picture1">
+            <img src="./img/picture2.png" class="project-image hide-pe-mic" alt="picture1">
+            <div class="img-description unu">
                 <ul class="card-details">
-                    <li>Canopy</li>
+                    <li class="hide-pe-mic-lista">UBER</li>
+                    <li class="hide-pe-mare-lista">Canopy</li>
                     <li>|</li>
                     <li>Back End Dev</li>
                     <li>|</li>
                     <li>2015</li>
                 </ul>
-                <h3 class="card-title">Multi-Post Stories</h3>
-                <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required</p>
+                <h3 class="card-title hide-pe-mare-lista">Multi-Post Stories</h3>
+                <h3 class="card-title hide-pe-mic-lista">Uber navigation</h3>
+                <p class="card-description hide-pe-mic-lista">A smart assistant to make driving more safe, efficient and more fun by unlocking your most expensive computer, your car</p>
+                <p class="card-description hide-pe-mare-lista">A daily selection of privately personalized reads; no accounts or sign-ups required</p>
                 <ul class="card-list">
                     <li class="card-tech">html</li>
                     <li class="card-tech">css</li>
@@ -111,17 +131,19 @@
         </div>
     </section>
     <section class="aboutme">
-        <h2>About <br>Myself</h2>
-        <p class="description">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
-        <p class="connect">LET'S CONNECT</p>
-        <ul class="social">
-            <li><a href="#" class="icon"><img src="./img/Github.png" alt="github" ></a></li>
-            <li><a href="#" class="icon"><img src="./img/linkedin.png" alt="instagram" ></a></li>
-            <li><a href="#" class="icon"><img src="./img/social.png" alt="social-network" ></a></li>
-            <li><a href="#" class="icon"><img src="./img/twitter.png" alt="twitter" ></a></li>
-            <li><a href="#" class="icon"><img src="./img/M.png" alt="social-network" ></a></li>
-        </ul>
-        <button type="button" class="getresume">Get my resume</button>
+        <div class="aboutmedetails">
+            <h2 class="smalltitle forsize">About <br>Myself</h2>
+            <p class="description">Hello I’m a software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+            <p class="connect">LET'S CONNECT</p>
+            <ul class="social socialicons">
+                <li><a href="#" class="icon"><img src="./img/Github.png" alt="github" ></a></li>
+                <li><a href="#" class="icon"><img src="./img/linkedin.png" alt="instagram" ></a></li>
+                <li><a href="#" class="icon"><img src="./img/social.png" alt="social-network" ></a></li>
+                <li><a href="#" class="icon"><img src="./img/twitter.png" alt="twitter" ></a></li>
+                <li><a href="#" class="icon"><img src="./img/M.png" alt="social-network" ></a></li>
+            </ul>
+            <button type="button" class="getresume">Get my resume</button>
+        </div>
         <ul class="about-skills">
             <li class="about-skill-list">Languages <img src="./img/chevron-down.png" alt="chevron" class="chevron"></li>
             <li>    
@@ -135,13 +157,8 @@
             <li class="about-skill-list border">Skills <img src="./img/chevron-right.png" alt="chevron" class="chevron"></li>
         </ul>
     </section>
-    <!-- Contact me section-->
     <section class="contact-form">
-        <div class="background-img">
-            <!-- Adding background image through css -->
-        </div>
-        <h2 class="contact-me">Contact me</h2>
-        <!--support message-->
+        <h2 class="contact-me forsize">Contact me</h2>
         <p class="support-msg">
             If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
         </p>
@@ -149,7 +166,7 @@
             <input type="text" name="user_name" placeholder="Your Name Here" maxlength="30" required>
             <input type="email" name="user_email" placeholder="Your Email Here" required>
             <textarea name="user_comment" class="comment" maxlength="500" required placeholder="Write your message here."></textarea>
-            <button type="submit" class="getresume">
+            <button type="submit" class="getresume gettouch">
                 Get it touch
             </button>
         </form>
