@@ -17,6 +17,15 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  animation-duration: 2s;
+  animation-name: rotationn;
+}
+
+@keyframes rotationn {
+
+}
+
 h1 {
   width: 100px;
   height: 40px;
