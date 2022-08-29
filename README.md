@@ -4,6 +4,9 @@
 
 > This is Florin Voicu portfolio, created with HTMl, CSS and Linters and will serve the purpose to get higher chances of employment.
 
+## Live demo
+
+https://vflorin1995.github.io/
 
 ## Built With
 
@@ -32,7 +35,6 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Inspiration
-- etc
 
 ## 📝 License
 
