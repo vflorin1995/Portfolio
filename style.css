@@ -74,7 +74,7 @@ h2 {
 .connect {
   margin: 0 24px 12px;
   padding: 0;
-  color: #7f8cff;
+  color: #656fc9;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -120,7 +120,7 @@ ul {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: #7a869a;
+  color: #6b7687;
   margin: 16px;
   display: flex;
   justify-content: space-between;
@@ -163,7 +163,7 @@ ul {
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
-  color: #6070ff;
+  color: #515fd6;
 }
 
 button {
@@ -171,16 +171,15 @@ button {
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   line-height: 24px;
-  border: 1px solid hsla(234, 100%, 69%, 1);
-  width: 124px;
-  height: 48px;
+  border: 1px solid #6171ff;
+  padding: 6px 12px;
   border-radius: 8px;
   background-color: white;
-  color: #396df2;
+  color: #000;
 }
 
 button:hover {
-  background-color: #6070ff;
+  background-color: #5968eb;
   color: white;
   border: none;
 }
@@ -199,12 +198,6 @@ button:disabled {
 
 .aboutme {
   margin-bottom: 24px;
-}
-
-.getresume {
-  width: 160px;
-  margin: 0 24px;
-  color: #6070ff;
 }
 
 .about-languages-list {
@@ -254,7 +247,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   position: relative;
-  background: #6070ff;
+  background: #5968eb;
   border-top-left-radius: 100px;
 }
 
@@ -305,7 +298,7 @@ input {
   border: none;
 }
 
-.comment {
+#comment {
   display: block;
   padding: 16px;
   margin: 20px 24px;
@@ -383,6 +376,7 @@ input {
 
   .img-description {
     flex: 1;
+    margin-top: 24px;
   }
 
   .right {
@@ -393,13 +387,10 @@ input {
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
-    position: absolute;
-    margin-top: -105px;
     margin-right: 0;
   }
 
   .card-details {
-    margin-top: 105px;
     justify-content: flex-start;
     margin-right: 0;
   }
@@ -475,7 +466,7 @@ input {
     width: 447px;
   }
 
-  .comment {
+  #comment {
     width: 447px;
   }
 
