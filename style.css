@@ -303,7 +303,7 @@ input {
   border: none;
 }
 
-.comment {
+#comment {
   display: block;
   padding: 16px;
   margin: 20px 24px;
@@ -471,7 +471,7 @@ input {
     width: 447px;
   }
 
-  .comment {
+  #comment {
     width: 447px;
   }
 
