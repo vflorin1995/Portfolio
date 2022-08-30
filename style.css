@@ -74,7 +74,7 @@ h2 {
 .connect {
   margin: 0 24px 12px;
   padding: 0;
-  color: #7f8cff;
+  color: #656fc9;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -204,7 +204,7 @@ button:disabled {
 .getresume {
   width: 160px;
   margin: 0 24px;
-  color: #6070ff;
+  color: #5968eb;
 }
 
 .about-languages-list {
@@ -254,7 +254,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   position: relative;
-  background: #6070ff;
+  background: #5968eb;
   border-top-left-radius: 100px;
 }
 
