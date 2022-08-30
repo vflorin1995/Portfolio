@@ -107,7 +107,7 @@ ul {
   background-color: rgb(250, 250, 250);
   margin: 44px 24px;
   border-radius: 10px;
-li  display: flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -172,8 +172,7 @@ button {
   font-size: 17px;
   line-height: 24px;
   border: 1px solid hsla(234, 100%, 69%, 1);
-  width: 124px;
-  height: 48px;
+  padding: 6px 12px;
   border-radius: 8px;
   background-color: white;
   color: #396df2;
@@ -202,7 +201,6 @@ button:disabled {
 }
 
 .getresume {
-  width: 160px;
   margin: 0 24px;
   color: #5968eb;
 }
@@ -383,6 +381,7 @@ input {
 
   .img-description {
     flex: 1;
+    margin-top: 24px;
   }
 
   .right {
@@ -393,13 +392,10 @@ input {
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
-    position: absolute;
-    margin-top: -105px;
     margin-right: 0;
   }
 
   .card-details {
-    margin-top: 105px;
     justify-content: flex-start;
     margin-right: 0;
   }
