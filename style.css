@@ -107,7 +107,7 @@ ul {
   background-color: rgb(250, 250, 250);
   margin: 44px 24px;
   border-radius: 10px;
-  display: flex;
+li  display: flex;
   flex-direction: column;
 }
 
@@ -120,7 +120,7 @@ ul {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: #7a869a;
+  color: #6b7687;
   margin: 16px;
   display: flex;
   justify-content: space-between;
@@ -163,7 +163,7 @@ ul {
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
-  color: #6070ff;
+  color: #515fd6;
 }
 
 button {
