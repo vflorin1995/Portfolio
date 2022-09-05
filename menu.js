@@ -1,10 +1,8 @@
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 const xButton = Array.from(document.querySelectorAll('.menu li'));
-
-console.log(xButton);
 function open() {
-    menu.classList.add('showMenu');
+  menu.classList.add('showMenu');
 }
 
 function close() {
@@ -14,5 +12,11 @@ function close() {
 hamburger.addEventListener('click', open);
 
 xButton.forEach((item) => {
-  item.addEventListener('click',close);
+  item.addEventListener('click', close);
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    close();
+  }
 });
