@@ -320,6 +320,35 @@ input {
   display: none;
 }
 
+.showMenu {
+  display: block;
+  position: fixed;
+  background-color: rgba(96, 112, 255, 0.95);
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+  padding: 40px 28px;
+}
+
+.showMenu li {
+  margin-bottom: 40px;
+}
+
+.showMenu > li > a {
+  color: white;
+}
+
+.close {
+  margin-left: 80%;
+}
+
 .hide-pe-mic {
   display: none;
 }
