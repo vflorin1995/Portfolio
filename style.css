@@ -336,6 +336,19 @@ input {
   font-weight: 600;
   padding: 40px 28px;
 }
+.displayNone {
+  display: none;
+}
+.showModal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  z-index: 2;
+}
 
 .showMenu li {
   margin-bottom: 40px;

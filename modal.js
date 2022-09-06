@@ -97,8 +97,70 @@ for (let i = 0; i < worksData.mobileImg.length; i += 1) {
 
   techList.append(technologies1, technologies2, technologies3);
   list.append(listitem1, listitem2, listitem3, listitem4, listitem5, listitem6);
-  descriptionDiv.append(desktopTitle, list, mobileTitle, 
+  descriptionDiv.append(desktopTitle, list, mobileTitle,
     desktopDescription, mobileDescription, techList, button);
   mainDiv.append(mobileImg, desktopImg, descriptionDiv);
   section.appendChild(mainDiv);
 }
+
+/* Modal window */
+
+const popUp = document.getElementById('popUp');
+const buttons = Array.from(document.querySelectorAll('#modal button'));
+let btnIndex;
+let mobileImgPop = document.createElement('img');
+buttons.forEach((button) => {
+  button.addEventListener('click',function () {
+    btnIndex= buttons.indexOf(button);
+    console.log(btnIndex);
+    popUp.classList.remove('displayNone');
+    popUp.classList.add('showModal');
+
+    mobileImgPop.src = worksData.mobileImg[btnIndex];
+    mobileImgPop.className = 'project-image hide-pe-mare';
+    mobileImgPop.alt = worksData.imgAlt[btnIndex];
+    let mainDivPop = document.createElement('div');
+    mainDivPop.className = 'projects';
+    mainDivPop.appendChild(mobileImgPop);
+    popUp.appendChild(mainDivPop);
+
+
+  });
+});
+
+mobileImgPop.addEventListener('click', closePop);
+function closePop () {
+  popUp.classList.remove('showModal');
+  popUp.classList.add('displayNone');
+  popUp.innerText = '';
+}
+
+
+
+
+
+/*
+<div class="projects">
+    <img src="./img/picture1.png" class="project-image hide-pe-mare" alt="project-image1">
+    <img src="./img/picture1d.png" class="hide-pe-mic project-image " alt="project-image1">
+    <div class="img-description">
+        <h3 class="card-title hide-pe-mic-lista">Tonic</h3>
+        <ul class="card-details">
+            <li class="hide-pe-mic-lista">CANOPY</li>
+            <li class="hide-pe-mare-lista">Canopy</li>
+            <li>|</li>
+            <li>Back End Dev</li>
+            <li>|</li>
+            <li>2015</li>
+        </ul>
+        <h3 class="card-title hide-pe-mare-lista">Tonic</h3>
+        <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required</p>
+        <ul class="card-list">
+            <li class="card-tech">html</li>
+            <li class="card-tech">css</li>
+            <li class="card-tech">javaScript</li>
+        </ul>
+        <button type="button">See project</button>
+    </div>
+</div>
+*/
