@@ -129,8 +129,10 @@ ul {
   color: #6b7687;
   margin: 16px;
   display: flex;
-  justify-content: space-between;
-  margin-right: 30%;
+}
+
+.card-details > * {
+  margin-right: 10px;
 }
 
 .card-details > :first-child {
@@ -157,8 +159,9 @@ ul {
 }
 
 .height {
-  height: 100px;
-  margin: 0;
+  height: 40px;
+  padding-top: 16px;
+  margin: 0 16px 0 0;
 }
 
 .buttonFlex {
@@ -167,6 +170,13 @@ ul {
 
 .buttonFlexOne {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m-left {
+  margin-left: 5px;
 }
 
 .justify {
@@ -496,7 +506,6 @@ input {
 
   .unu > * {
     margin-left: 48px;
-    margin-right: 48px;
   }
 
   .aboutme {
@@ -643,8 +652,8 @@ input {
   }
 
   .modalWindow {
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 13%;
+    margin-right: 13%;
   }
 
   .imgHeight {
@@ -655,14 +664,33 @@ input {
 
   .gridGrid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 5fr 2fr;
   }
 
   .margin-none {
     margin: 0;
   }
 
+  .margin-left {
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+
   .buttonFlex {
     margin-right: 16px;
+  }
+
+  .img-contain {
+    width: 76%;
+    margin-left: 16px;
+    margin-top: 28px;
+  }
+
+  .modal-pop-list {
+    margin: 24px 0 0 0;
+  }
+
+  .pointer {
+    cursor: pointer;
   }
 }

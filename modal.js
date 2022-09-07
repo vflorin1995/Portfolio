@@ -111,7 +111,7 @@ let btnIndex;
 
 const mobileTitlePop = document.createElement('h3');
 const desktopTitlePop = document.createElement('h3');
-const closeButton = document.createElement('h3');
+const closeButton = document.createElement('img');
 const titleContainer = document.createElement('div');
 const mobileImgPop = document.createElement('img');
 const desktopImgPop = document.createElement('img');
@@ -129,6 +129,11 @@ const techListPop = document.createElement('ul');
 const techItem1 = document.createElement('li');
 const techItem2 = document.createElement('li');
 const techItem3 = document.createElement('li');
+
+const techItem4 = document.createElement('li');
+const techItem5 = document.createElement('li');
+const techItem6 = document.createElement('li');
+
 const buttonContainer = document.createElement('div');
 const seeLiveBtn = document.createElement('button');
 const seeSourceBtn = document.createElement('button');
@@ -145,12 +150,13 @@ buttons.forEach((button) => {
     mobileTitlePop.className = 'hide-pe-mare-lista modalTitle';
     desktopTitlePop.innerText = worksData.desktopTitle[btnIndex];
     desktopTitlePop.className = 'hide-pe-mic-lista modalTitle';
-    closeButton.innerText = 'x';
-    closeButton.className = 'closeButtonPop';
+    closeButton.src = './img/close-arrow.png';
+    closeButton.className = 'pointer';
+    // closeButton.className = 'closeButtonPop';
     titleContainer.append(mobileTitlePop, desktopTitlePop, closeButton);
     titleContainer.className = 'buttonFlex justify height';
 
-    descriptionPop.className = 'card-details';
+    descriptionPop.className = 'card-details margin-none margin-left';
     description1.className = 'hide-pe-mic-lista';
     description1.innerText = worksData.cardDetail1[btnIndex];
     description2.className = 'hide-pe-mare-lista';
@@ -166,8 +172,8 @@ buttons.forEach((button) => {
     mobileImgPop.className = 'project-image hide-pe-mare buttonFlexOne';
     mobileImgPop.alt = worksData.imgAlt[btnIndex];
 
-    desktopImgPop.src = worksData.desktopImg[btnIndex];
-    desktopImgPop.className = 'hide-pe-mic project-image buttonFlexOne imgHeight';
+    desktopImgPop.src = './img/modal.png';
+    desktopImgPop.className = 'hide-pe-mic buttonFlexOne img-contain';
     desktopImgPop.alt = worksData.imgAlt[btnIndex];
 
     imgContainer.className = 'buttonFlex';
@@ -175,23 +181,31 @@ buttons.forEach((button) => {
 
     mobDescription.innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s';
     mobDescription.className = 'card-description hide-pe-mare-lista';
-    deskDescription.innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining esse';
+    deskDescription.innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release';
     deskDescription.className = 'card-description hide-pe-mic-lista';
 
-    techListPop.className = 'card-list';
+    techListPop.className = 'card-list modal-pop-list';
     techItem1.className = 'card-tech';
     techItem1.innerText = worksData.technologies1[btnIndex];
     techItem2.className = 'card-tech';
     techItem2.innerText = worksData.technologies2[btnIndex];
     techItem3.className = 'card-tech';
     techItem3.innerText = worksData.technologies3[btnIndex];
-    techListPop.append(techItem1, techItem2, techItem3);
+
+    techItem4.className = 'card-tech hide-pe-mic-lista';
+    techItem4.innerText = 'github';
+    techItem5.className = 'card-tech hide-pe-mic-lista';
+    techItem5.innerText = 'ruby';
+    techItem6.className = 'card-tech hide-pe-mic-lista';
+    techItem6.innerText = 'Bootstrap';
+
+    techListPop.append(techItem1, techItem2, techItem3, techItem4, techItem5, techItem6);
 
     seeLiveBtn.type = 'button';
-    seeLiveBtn.innerText = 'See Live';
+    seeLiveBtn.innerHTML = "See Live <img class='m-left' src='./img/IconExport.svg'>";
     seeLiveBtn.className = 'buttonFlexOne margin-none';
     seeSourceBtn.type = 'button';
-    seeSourceBtn.innerText = 'See Source';
+    seeSourceBtn.innerHTML = "See Source <img class='m-left' src='./img/Github.png'>";
     seeSourceBtn.className = 'buttonFlexOne margin-none';
     buttonContainer.append(seeLiveBtn, seeSourceBtn);
     buttonContainer.className = 'buttonFlex';
