@@ -15,83 +15,83 @@ const worksData = {
   technologies3: ['javaScript', 'javaScript', 'javaScript', 'javaScript'],
 };
 
-const section = document.getElementById('modal');
+const section = document.getElementById('works');
 
 for (let i = 0; i < worksData.mobileImg.length; i += 1) {
-  let mainDiv = document.createElement('div');
+  const mainDiv = document.createElement('div');
   mainDiv.className = 'projects';
   if (i % 2 === 1) {
     mainDiv.className = 'projects right';
   }
 
-  let mobileImg = document.createElement('img');
+  const mobileImg = document.createElement('img');
   mobileImg.src = worksData.mobileImg[i];
   mobileImg.className = 'project-image hide-pe-mare';
   mobileImg.alt = worksData.imgAlt[i];
 
-  let desktopImg = document.createElement('img');
+  const desktopImg = document.createElement('img');
   desktopImg.src = worksData.desktopImg[i];
   desktopImg.className = 'project-image hide-pe-mic';
   mobileImg.alt = worksData.imgAlt[i];
 
-  let descriptionDiv = document.createElement('div');
+  const descriptionDiv = document.createElement('div');
   descriptionDiv.className = 'img-description unu';
 
-  let desktopTitle = document.createElement('h3');
+  const desktopTitle = document.createElement('h3');
   desktopTitle.className = 'card-title hide-pe-mic-lista';
   desktopTitle.innerText = worksData.desktopTitle[i];
 
-  let list = document.createElement('ul');
+  const list = document.createElement('ul');
   list.className = 'card-details';
 
-  let listitem1 = document.createElement('li');
+  const listitem1 = document.createElement('li');
   listitem1.className = 'hide-pe-mic-lista';
   listitem1.innerText = worksData.cardDetail1[i];
 
-  let listitem2 = document.createElement('li');
+  const listitem2 = document.createElement('li');
   listitem2.className = 'hide-pe-mare-lista';
   listitem2.innerText = worksData.cardDetail2[i];
 
-  let listitem3 = document.createElement('li');
+  const listitem3 = document.createElement('li');
   listitem3.innerText = '|';
 
-  let listitem4 = document.createElement('li');
+  const listitem4 = document.createElement('li');
   listitem4.innerText = worksData.cardDetail4[i];
 
-  let listitem5 = document.createElement('li');
+  const listitem5 = document.createElement('li');
   listitem5.innerText = '|';
 
-  let listitem6 = document.createElement('li');
+  const listitem6 = document.createElement('li');
   listitem6.innerText = worksData.cardDetail6[i];
 
-  let mobileTitle = document.createElement('h3');
+  const mobileTitle = document.createElement('h3');
   mobileTitle.className = 'card-title hide-pe-mare-lista';
   mobileTitle.innerText = worksData.mobileTitle[i];
 
-  let desktopDescription = document.createElement('p');
+  const desktopDescription = document.createElement('p');
   desktopDescription.className = 'card-description hide-pe-mic-lista';
   desktopDescription.innerText = worksData.desktopDescription[i];
 
-  let mobileDescription = document.createElement('p');
+  const mobileDescription = document.createElement('p');
   mobileDescription.className = 'card-description hide-pe-mare-lista';
   mobileDescription.innerText = worksData.mobileDescription[i];
 
-  let techList = document.createElement('ul');
+  const techList = document.createElement('ul');
   techList.className = 'card-list';
 
-  let technologies1 = document.createElement('li');
+  const technologies1 = document.createElement('li');
   technologies1.className = 'card-tech';
   technologies1.innerText = worksData.technologies1[i];
 
-  let technologies2 = document.createElement('li');
+  const technologies2 = document.createElement('li');
   technologies2.className = 'card-tech';
   technologies2.innerText = worksData.technologies2[i];
 
-  let technologies3 = document.createElement('li');
+  const technologies3 = document.createElement('li');
   technologies3.className = 'card-tech';
   technologies3.innerText = worksData.technologies3[i];
 
-  let button = document.createElement('button');
+  const button = document.createElement('button');
   button.type = 'button';
   button.innerText = 'See Project';
 
@@ -106,53 +106,50 @@ for (let i = 0; i < worksData.mobileImg.length; i += 1) {
 /* Modal window */
 
 const popUp = document.getElementById('popUp');
-const buttons = Array.from(document.querySelectorAll('#modal button'));
+const buttons = Array.from(document.querySelectorAll('#works button'));
 let btnIndex;
 
-let mobileTitlePop = document.createElement('h3');
-let desktopTitlePop = document.createElement('h3');
-let closeButton = document.createElement('h3');
-let titleContainer = document.createElement('div');
-let mobileImgPop = document.createElement('img');
-let desktopImgPop = document.createElement('img');
-let imgContainer = document.createElement('div');
-let descriptionPop = document.createElement('ul');
-let description1 = document.createElement('li');
-let description2 = document.createElement('li');
-let description3 = document.createElement('li');
-let description4 = document.createElement('li');
-let description5 = document.createElement('li');
-let description6 = document.createElement('li');
-let mobDescription = document.createElement('p');
-let deskDescription = document.createElement('p');
-let techListPop = document.createElement('ul');
-let techItem1 = document.createElement('li');
-let techItem2 = document.createElement('li');
-let techItem3 = document.createElement('li');
-let buttonContainer = document.createElement('div');
-let seeLiveBtn = document.createElement('button');
-let seeSourceBtn = document.createElement('button');
-let techBtn = document.createElement('div');
-let descTech = document.createElement('div');
+const mobileTitlePop = document.createElement('h3');
+const desktopTitlePop = document.createElement('h3');
+const closeButton = document.createElement('h3');
+const titleContainer = document.createElement('div');
+const mobileImgPop = document.createElement('img');
+const desktopImgPop = document.createElement('img');
+const imgContainer = document.createElement('div');
+const descriptionPop = document.createElement('ul');
+const description1 = document.createElement('li');
+const description2 = document.createElement('li');
+const description3 = document.createElement('li');
+const description4 = document.createElement('li');
+const description5 = document.createElement('li');
+const description6 = document.createElement('li');
+const mobDescription = document.createElement('p');
+const deskDescription = document.createElement('p');
+const techListPop = document.createElement('ul');
+const techItem1 = document.createElement('li');
+const techItem2 = document.createElement('li');
+const techItem3 = document.createElement('li');
+const buttonContainer = document.createElement('div');
+const seeLiveBtn = document.createElement('button');
+const seeSourceBtn = document.createElement('button');
+const techBtn = document.createElement('div');
+const descTech = document.createElement('div');
 
 buttons.forEach((button) => {
-  button.addEventListener('click',function () {
-    btnIndex= buttons.indexOf(button);
-    console.log(btnIndex);
+  button.addEventListener('click', () => {
+    btnIndex = buttons.indexOf(button);
     popUp.classList.remove('displayNone');
     popUp.classList.add('showModal');
 
-    mobileTitlePop.innerText=worksData.mobileTitle[btnIndex];
+    mobileTitlePop.innerText = worksData.mobileTitle[btnIndex];
     mobileTitlePop.className = 'hide-pe-mare-lista modalTitle';
-    desktopTitlePop.innerText=worksData.desktopTitle[btnIndex];
+    desktopTitlePop.innerText = worksData.desktopTitle[btnIndex];
     desktopTitlePop.className = 'hide-pe-mic-lista modalTitle';
-    closeButton.innerText='x';
-    closeButton.className='closeButtonPop';
+    closeButton.innerText = 'x';
+    closeButton.className = 'closeButtonPop';
     titleContainer.append(mobileTitlePop, desktopTitlePop, closeButton);
-    titleContainer.className='buttonFlex justify height';
+    titleContainer.className = 'buttonFlex justify height';
 
-
-    
     descriptionPop.className = 'card-details';
     description1.className = 'hide-pe-mic-lista';
     description1.innerText = worksData.cardDetail1[btnIndex];
@@ -162,7 +159,8 @@ buttons.forEach((button) => {
     description4.innerText = worksData.cardDetail4[btnIndex];
     description5.innerText = '|';
     description6.innerText = worksData.cardDetail6[btnIndex];
-    descriptionPop.append(description1, description2, description3, description4, description5, description6);
+    descriptionPop.append(description1, description2, description3,
+      description4, description5, description6);
 
     mobileImgPop.src = worksData.mobileImg[btnIndex];
     mobileImgPop.className = 'project-image hide-pe-mare buttonFlexOne';
@@ -175,8 +173,6 @@ buttons.forEach((button) => {
     imgContainer.className = 'buttonFlex';
     imgContainer.append(mobileImgPop, desktopImgPop);
 
-
-    
     mobDescription.innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s';
     mobDescription.className = 'card-description hide-pe-mare-lista';
     deskDescription.innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining esse';
@@ -200,53 +196,22 @@ buttons.forEach((button) => {
     buttonContainer.append(seeLiveBtn, seeSourceBtn);
     buttonContainer.className = 'buttonFlex';
 
-
     techBtn.append(techListPop, buttonContainer);
-    descTech.append(mobDescription, deskDescription,techBtn);
+    descTech.append(mobDescription, deskDescription, techBtn);
     descTech.className = 'gridGrid';
 
-    let mainDivPop = document.createElement('div');
+    const mainDivPop = document.createElement('div');
     mainDivPop.className = 'modalWindow';
 
     mainDivPop.append(titleContainer, descriptionPop, imgContainer, descTech);
     popUp.appendChild(mainDivPop);
-
   });
 });
 
-closeButton.addEventListener('click', closePop);
-function closePop () {
+function closePop() {
   popUp.classList.remove('showModal');
   popUp.classList.add('displayNone');
   popUp.innerText = '';
 }
 
-
-
-
-
-/*
-<div class="projects">
-    <img src="./img/picture1.png" class="project-image hide-pe-mare" alt="project-image1">
-    <img src="./img/picture1d.png" class="hide-pe-mic project-image " alt="project-image1">
-    <div class="img-description">
-        <h3 class="card-title hide-pe-mic-lista">Tonic</h3>
-        <ul class="card-details">
-            <li class="hide-pe-mic-lista">CANOPY</li>
-            <li class="hide-pe-mare-lista">Canopy</li>
-            <li>|</li>
-            <li>Back End Dev</li>
-            <li>|</li>
-            <li>2015</li>
-        </ul>
-        <h3 class="card-title hide-pe-mare-lista">Tonic</h3>
-        <p class="card-description">A daily selection of privately personalized reads; no accounts or sign-ups required</p>
-        <ul class="card-list">
-            <li class="card-tech">html</li>
-            <li class="card-tech">css</li>
-            <li class="card-tech">javaScript</li>
-        </ul>
-        <button type="button">See project</button>
-    </div>
-</div>
-*/
+closeButton.addEventListener('click', closePop);

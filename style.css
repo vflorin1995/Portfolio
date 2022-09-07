@@ -156,9 +156,9 @@ ul {
   width: 70%;
 }
 
-.height{
-  height:100px;
-  margin:0;
+.height {
+  height: 100px;
+  margin: 0;
 }
 
 .buttonFlex {
@@ -377,9 +377,11 @@ input {
   font-weight: 600;
   padding: 40px 28px;
 }
+
 .displayNone {
   display: none;
 }
+
 .showModal {
   display: block;
   position: fixed;
@@ -656,7 +658,7 @@ input {
     grid-template-columns: 2fr 1fr;
   }
 
-  .margin-none{
+  .margin-none {
     margin: 0;
   }
 
