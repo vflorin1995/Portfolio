@@ -12,14 +12,21 @@ https://vflorin1995.github.io/
 
 - HTML
 - CSS
+- JS
 - Linters
 
 ## Authors
 
-👤 **Author1**
+👤 **Voicu FLorin**
 
 - GitHub: [@vflorin1995](https://github.com/vflorin1995)
 - Twitter: [@vflorin1995](https://twitter.com/vflorin1995)
+
+
+👤 **Andrade Gabriel**
+
+- GitHub: [@gandradep](https://github.com/gandradep)
+- Twitter: [@gandradep](https://twitter.com/gandradep)
 
 ## 🤝 Contributing
 
