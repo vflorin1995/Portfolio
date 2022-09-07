@@ -108,7 +108,33 @@ for (let i = 0; i < worksData.mobileImg.length; i += 1) {
 const popUp = document.getElementById('popUp');
 const buttons = Array.from(document.querySelectorAll('#modal button'));
 let btnIndex;
+
+let mobileTitlePop = document.createElement('h3');
+let desktopTitlePop = document.createElement('h3');
+let closeButton = document.createElement('h3');
+let titleContainer = document.createElement('div');
 let mobileImgPop = document.createElement('img');
+let desktopImgPop = document.createElement('img');
+let imgContainer = document.createElement('div');
+let descriptionPop = document.createElement('ul');
+let description1 = document.createElement('li');
+let description2 = document.createElement('li');
+let description3 = document.createElement('li');
+let description4 = document.createElement('li');
+let description5 = document.createElement('li');
+let description6 = document.createElement('li');
+let mobDescription = document.createElement('p');
+let deskDescription = document.createElement('p');
+let techListPop = document.createElement('ul');
+let techItem1 = document.createElement('li');
+let techItem2 = document.createElement('li');
+let techItem3 = document.createElement('li');
+let buttonContainer = document.createElement('div');
+let seeLiveBtn = document.createElement('button');
+let seeSourceBtn = document.createElement('button');
+let techBtn = document.createElement('div');
+let descTech = document.createElement('div');
+
 buttons.forEach((button) => {
   button.addEventListener('click',function () {
     btnIndex= buttons.indexOf(button);
@@ -116,19 +142,79 @@ buttons.forEach((button) => {
     popUp.classList.remove('displayNone');
     popUp.classList.add('showModal');
 
-    mobileImgPop.src = worksData.mobileImg[btnIndex];
-    mobileImgPop.className = 'project-image hide-pe-mare';
-    mobileImgPop.alt = worksData.imgAlt[btnIndex];
-    let mainDivPop = document.createElement('div');
-    mainDivPop.className = 'projects';
-    mainDivPop.appendChild(mobileImgPop);
-    popUp.appendChild(mainDivPop);
+    mobileTitlePop.innerText=worksData.mobileTitle[btnIndex];
+    mobileTitlePop.className = 'hide-pe-mare-lista modalTitle';
+    desktopTitlePop.innerText=worksData.desktopTitle[btnIndex];
+    desktopTitlePop.className = 'hide-pe-mic-lista modalTitle';
+    closeButton.innerText='x';
+    closeButton.className='closeButtonPop';
+    titleContainer.append(mobileTitlePop, desktopTitlePop, closeButton);
+    titleContainer.className='buttonFlex justify height';
 
+
+    
+    descriptionPop.className = 'card-details';
+    description1.className = 'hide-pe-mic-lista';
+    description1.innerText = worksData.cardDetail1[btnIndex];
+    description2.className = 'hide-pe-mare-lista';
+    description2.innerText = worksData.cardDetail2[btnIndex];
+    description3.innerText = '|';
+    description4.innerText = worksData.cardDetail4[btnIndex];
+    description5.innerText = '|';
+    description6.innerText = worksData.cardDetail6[btnIndex];
+    descriptionPop.append(description1, description2, description3, description4, description5, description6);
+
+    mobileImgPop.src = worksData.mobileImg[btnIndex];
+    mobileImgPop.className = 'project-image hide-pe-mare buttonFlexOne';
+    mobileImgPop.alt = worksData.imgAlt[btnIndex];
+
+    desktopImgPop.src = worksData.desktopImg[btnIndex];
+    desktopImgPop.className = 'hide-pe-mic project-image buttonFlexOne imgHeight';
+    desktopImgPop.alt = worksData.imgAlt[btnIndex];
+
+    imgContainer.className = 'buttonFlex';
+    imgContainer.append(mobileImgPop, desktopImgPop);
+
+
+    
+    mobDescription.innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s';
+    mobDescription.className = 'card-description hide-pe-mare-lista';
+    deskDescription.innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining esse';
+    deskDescription.className = 'card-description hide-pe-mic-lista';
+
+    techListPop.className = 'card-list';
+    techItem1.className = 'card-tech';
+    techItem1.innerText = worksData.technologies1[btnIndex];
+    techItem2.className = 'card-tech';
+    techItem2.innerText = worksData.technologies2[btnIndex];
+    techItem3.className = 'card-tech';
+    techItem3.innerText = worksData.technologies3[btnIndex];
+    techListPop.append(techItem1, techItem2, techItem3);
+
+    seeLiveBtn.type = 'button';
+    seeLiveBtn.innerText = 'See Live';
+    seeLiveBtn.className = 'buttonFlexOne margin-none';
+    seeSourceBtn.type = 'button';
+    seeSourceBtn.innerText = 'See Source';
+    seeSourceBtn.className = 'buttonFlexOne margin-none';
+    buttonContainer.append(seeLiveBtn, seeSourceBtn);
+    buttonContainer.className = 'buttonFlex';
+
+
+    techBtn.append(techListPop, buttonContainer);
+    descTech.append(mobDescription, deskDescription,techBtn);
+    descTech.className = 'gridGrid';
+
+    let mainDivPop = document.createElement('div');
+    mainDivPop.className = 'modalWindow';
+
+    mainDivPop.append(titleContainer, descriptionPop, imgContainer, descTech);
+    popUp.appendChild(mainDivPop);
 
   });
 });
 
-mobileImgPop.addEventListener('click', closePop);
+closeButton.addEventListener('click', closePop);
 function closePop () {
   popUp.classList.remove('showModal');
   popUp.classList.add('displayNone');
