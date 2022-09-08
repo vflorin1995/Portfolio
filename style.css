@@ -371,6 +371,12 @@ input {
   display: none;
 }
 
+.redtext {
+  color: brown;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
 .showMenu {
   display: block;
   position: fixed;
