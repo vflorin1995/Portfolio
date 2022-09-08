@@ -1,14 +1,18 @@
 const form = document.getElementById('contactForm');
 const email = document.getElementById('user_email');
+const message = document.querySelector('.redtext');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  let emailInput = email.value;
-  let emailLowerCase = emailInput.toLowerCase();
-  if(emailInput === emailLowerCase){
-    console.log('submit');
+  const emailInput = email.value;
+  const emailLowerCase = emailInput.toLowerCase();
+  if (emailInput === emailLowerCase) {
+    form.submit();
   } else {
-    console.log(emailLowerCase);
+    message.classList.remove('displayNone');
   }
+});
 
+email.addEventListener('focus', () => {
+  message.classList.add('displayNone');
 });

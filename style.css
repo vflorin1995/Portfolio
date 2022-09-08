@@ -357,6 +357,16 @@ input {
   display: none;
 }
 
+.displayNone {
+  display: none;
+}
+
+.redtext {
+  color: brown;
+  font-weight: bolder;
+  font-size: 26px;
+}
+
 @media (min-width: 768px) {
   header {
     padding-left: 155px;
