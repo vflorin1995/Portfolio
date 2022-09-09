@@ -225,7 +225,6 @@ buttons.forEach((button) => {
 function closePop() {
   popUp.classList.remove('showModal');
   popUp.classList.add('displayNone');
-  popUp.innerText = '';
 }
 
 closeButton.addEventListener('click', closePop);
