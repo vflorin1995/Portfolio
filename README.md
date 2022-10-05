@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> This is Florin Voicu portfolio, created with HTMl, CSS and Linters and will serve the purpose to get higher chances of employment.
+> This is Florin Voicu portfolio, created with HTMl, CSS , JS and Linters and which is showcasing a variety of projects built with different tools and skill sets.
 
 ## Live demo
 
